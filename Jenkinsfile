@@ -10,11 +10,11 @@ pipeline {
                 echo 'build and Testing are in the same stage to avoid conflicts.....'
             }
         }
-        stage('DEPLOY') 
+        stage('DEPLOY & DELIVERY') 
         {
             steps 
             {
-                echo 'Deploying.....'
+                echo 'Deploy and delivery on the same stage.....'
             }
         }
     }
