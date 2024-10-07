@@ -3,18 +3,11 @@ pipeline {
 
     stages 
     {
-        stage('BUILD') 
+        stage('BUILD & TEST') 
         {
             steps 
             {
-                echo 'building.....'
-            }
-        }
-        stage('TEST') 
-        {
-            steps 
-            {
-                echo 'Testing.....'
+                echo 'build and Testing are in the same stage to avoid conflicts.....'
             }
         }
         stage('DEPLOY') 
